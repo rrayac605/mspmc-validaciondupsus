@@ -1,0 +1,23 @@
+server:
+  port: ${portMSValidacionDupSus}
+  
+spring:
+  data:
+    mongodb:
+      authentication-database: ${authenticationdatabaseMongo}
+      username: ${usrMongoCifras}
+      password: ${pwMongoCifras}
+      database: ${databaseMongo}
+      port: ${portMongo}
+      host: ${hostMongo}
+logging:
+  file: ${fileLogValidacionDupSus}  
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: WARN
+    mx.gob.imss.cit: DEBUG
+    org.springframework.web: INFO    
+    
+  
